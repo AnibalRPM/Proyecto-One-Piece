@@ -1,301 +1,328 @@
+/*Arreglos Variados*/
 body, html {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 .logo {
-    width: 210px;
-    cursor: pointer;
+  width: 210px;
+  cursor: pointer;
 }
 
 body {
-    background-color:#1A1A1A;
+  background-color: #1A1A1A;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-/* Encabezado */
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+/*Mixins*/
+/*Header*/
 .miHeader {
-    background-color:#2C3E50;
-} 
+  background-color: #2C3E50;
+}
 
 .menuNavCentered {
-    justify-content: center;
-    width: 100%;
-    text-align: center; 
+  justify-content: center;
+  width: 100%;
+  text-align: center;
 }
 
 .menuNav a {
-    text-transform: uppercase;
-    font-size: 2rem;
-    color: #FFD700;
-    margin: 0 18px;
-    padding: 10px;
-    border-right: 2px solid #000000;
-    transition: color 0.3s ease-in-out;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #FFD700;
+  margin: 0 18px;
+  padding: 10px;
+  border-right: 2px solid #000000;
+  transition: color 0.3s ease-in-out;
 }
-
-@media (max-width: 1341px) {
-    .menuNav a {
-        font-size: 1.5rem;
-        margin: 0 10px;
-        padding: 8px;
-    }
-}
-
 
 .menuNav a:hover {
-    background-color: #34495E;
-    color: #FFFFFF;
+  background-color: #34495E;
+  color: #FFFFFF;
+}
+.menuNav .nav-item:last-child .nav-link {
+  border-right: none;
 }
 
-.menuNav .nav-item:last-child .nav-link {
-    border-right: none;
+.navbar-toggler[aria-expanded=true] .navbar-toggler-icon {
+  background-color: #34495E;
 }
 
 .navbar-toggler-icon {
-    color: #FFD700;
+  background-image: url(../imagenes/logo\ png.jpg);
+  height: 80px;
+  width: 80px;
 }
 
-.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
-    background-color: #34495E;
-}
-
-/* Contenido "One Piece" */
+/*Contenido "One piece"*/
 .texto {
-    color: #ECF0F1;
-    text-align: left;
+  color: #ECF0F1;
+  text-align: left;
 }
 
 .titulo {
-    color: #3498DB;
-    font-size: 55px;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    font-family: sans-serif;
+  color: #3498DB;
+  font-size: 55px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: sans-serif;
 }
 
 .row {
-    height: 100%;
+  height: 100%;
 }
 
 .paginaUno {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
 
 h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
+  font-size: 48px;
+  margin-bottom: 10px;
 }
 
 h2 {
-    color: #E74C3C;
+  color: #E74C3C;
 }
 
 .textoOnepiece {
-    flex: 1; 
-    padding: 20px; 
-}
-
-
-
-@media (max-width: 991px) {
-    .imagenMugi {
-        width: 100%;
-        height: auto;
-        margin-top: 20px;
-    }
-}
-
-@media (min-width: 992px) {
-    .imagenMugi {
-        width: 100%;
-        height: 100%;
-        padding: 20px;
-        padding-right: 10px;
-    }
-}
-
-/* Footer */
-.miFooter {
-    background-color: #2C3E50;
-    color: #ECF0F1;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.footer-text {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-.social-links {
-    list-style: none;
-    padding: 0;
-}
-
-.social-links li {
-    display: inline;
-    margin-right: 15px;
-}
-
-.social-links a {
-    color: #ECF0F1;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease-in-out;
-    border-right: 2px solid #000000;
-}
-
-.social-links a:hover {
-    color: #FFD700;
+  flex: 1;
+  padding: 20px;
 }
 
 /* Contenido "Netflix" */
 .trailer {
-    width: 100%;
-    height: 500px;
-    padding: 20px;
+  width: 100%;
+  height: 500px;
+  padding: 20px;
 }
 
 .textoNetflix {
-    flex: 1; 
-    padding: 22px;
+  flex: 1;
+  padding: 22px;
 }
 
 /* Contenido "protagonistas"*/
 .personajes {
-    width: 250px;
-    height: 250px;
-    border: 2px solid black;
+  width: 250px;
+  height: 250px;
+  border: 2px solid black;
+  transition: transform 1s;
 }
 
 .zoro {
-    color:#5CB85C;
-
+  color: #5CB85C;
 }
 
 .nami {
-    color: #FFA500;
+  color: #FFA500;
 }
 
 .usopp {
-    color: #D2B48C;
+  color: #D2B48C;
 }
 
 .sanji {
-    color: #FFD700;
+  color: #FFD700;
 }
 
 .luffyTitulo {
-    color: #FF0000;
+  color: #FF0000;
 }
 
 .personajes {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .luffy {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .luffySolo {
-    width: 100%;
-    height: 80%;
-    border: 2px solid black;
+  width: 100%;
+  height: 80%;
+  border: 2px solid black;
+  transition: transform 1s;
 }
 
-@media (max-width: 767px) {
-    .personajes {
-        width: 100%;
-        height: auto;
-        margin-top: 20px;
-        border: 2px solid black;
-    }
+.personajes:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.luffySolo:hover {
+  transform: scale(1.1);
+  z-index: 1;
 }
 
 /* Contenido "Capitulos"*/
 .arcoZoro,
-    .arcoBuggy,
-    .arcoKuro,
-    .arcoBaritie,
-    .arcoPark {
-        margin-bottom: 20px;
-        padding: 15px;
-        border: 2px solid #009688;
-        background-color: #1A1A1A;
-    }
+.arcoBuggy,
+.arcoKuro,
+.arcoBaritie,
+.arcoPark {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 2px solid #009688;
+  background-color: #1A1A1A;
+}
 
-    .tituloCap {
-        color: #FFD700;
-    }
+.tituloCap {
+  color: #FFD700;
+}
 
-    .arcoZoro img,
-    .arcoBuggy img,
-    .arcoKuro img,
-    .arcoBaritie img,
-    .arcoPark img {
-        display: block;
-        margin: 0 auto;
-        max-width: 100%;
-        height: auto;
-    }
+.arcoZoro img,
+.arcoBuggy img,
+.arcoKuro img,
+.arcoBaritie img,
+.arcoPark img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
 
-    .arco-imagen {
-        margin-bottom: 20px;
-        padding: 15px;
-        border: 2px solid #009688;
-        background-color: #1A1A1A;
-        background-size: cover;
-        background-position: center;
-        position: relative; 
-    }
-    
-    .arco-imagen img {
-        width: 100%; 
-        height: auto; 
-        display: block;
-    }
+.arco-imagen {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 2px solid #009688;
+  background-color: #1A1A1A;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.arco-imagen img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
-    /* Contenido "openings"*/
-    .videos {
-        margin-bottom: 20px;
-    }
+/* Contenido "openings"*/
+.videos {
+  margin-bottom: 20px;
+}
 
-    .openings {
-        position: relative;
-        width: 100%;
-        padding-bottom: 56.25%; 
-        overflow: hidden;
-    }
+.openings {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+.openings iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
-    .openings iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
+.subUno,
+.subDos {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 3rem;
+  color: #00BFFF;
+}
 
-    .subUno,
-    .subDos {
-        text-align: center;
-        margin-top: 10px;
-        font-size: 3rem;
-        color:#00BFFF;
-    }
+/*******Medias******/
+/*Media de Header*/
+@media (max-width: 1341px) {
+  .menuNav a {
+    font-size: 1.5rem;
+    margin: 0 10px;
+    padding: 8px;
+  }
+}
+@media (max-width: 1055px) {
+  .menuNav a {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 1013px) {
+  .menuNav a {
+    font-size: 1.3rem;
+  }
+}
+/*Media de One Piece*/
+@media (max-width: 991px) {
+  .imagenMugi {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .imagenMugi {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    padding-right: 10px;
+  }
+}
+/*Media de Protagonistas*/
+@media (max-width: 767px) {
+  .personajes {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border: 2px solid black;
+  }
+}
+/*Media de Openings*/
+@media (max-width: 1200px) {
+  .openings {
+    padding-bottom: 100%;
+  }
+  .videos {
+    margin-bottom: 10px;
+  }
+}
+/*Footer*/
+.miFooter {
+  margin-top: auto;
+  background-color: #2C3E50;
+  color: #ECF0F1;
+  padding: 20px 0;
+  text-align: center;
+}
 
-    @media (max-width: 1200px) {
-        .openings {
-            padding-bottom: 100%; 
-        }
+.footer-text {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
 
-        .videos {
-            margin-bottom: 10px;
-        }
-    }
+.social-links {
+  list-style: none;
+  padding: 0;
+}
+.social-links li {
+  display: inline;
+  margin-right: 15px;
+}
+.social-links a {
+  color: #ECF0F1;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+  border-right: 2px solid #000000;
+}
+.social-links a:hover {
+  color: #FFD700;
+}
+
+/*# sourceMappingURL=style.css.map */

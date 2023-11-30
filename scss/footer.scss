@@ -1,0 +1,36 @@
+/*Footer*/
+
+.miFooter {
+    margin-top: auto;
+    background-color: #2C3E50;
+    color: #ECF0F1;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+
+    li {
+        display: inline;
+        margin-right: 15px;
+    }
+
+    a {
+        color: #ECF0F1;
+        text-decoration: none;
+        font-size: 18px;
+        transition: color 0.3s ease-in-out;
+        border-right: 2px solid #000000;
+
+        &:hover {
+            @include colorPrincipal;
+        }
+    }
+}

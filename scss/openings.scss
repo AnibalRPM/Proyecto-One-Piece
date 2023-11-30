@@ -1,0 +1,27 @@
+/* Contenido "openings"*/
+
+.videos {
+    margin-bottom: 20px;
+}
+
+.openings {
+    position: relative;
+    @include HyW100;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include HyW100;
+    }
+}
+
+.subUno,
+.subDos {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 3rem;
+    color: #00BFFF;
+}

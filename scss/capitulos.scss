@@ -1,0 +1,43 @@
+/* Contenido "Capitulos"*/
+
+.arcoZoro,
+.arcoBuggy,
+.arcoKuro,
+.arcoBaritie,
+.arcoPark {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 2px solid #009688;
+    background-color: #1A1A1A;
+}
+
+.tituloCap {
+    @include colorPrincipal;
+}
+
+.arcoZoro img,
+.arcoBuggy img,
+.arcoKuro img,
+.arcoBaritie img,
+.arcoPark img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.arco-imagen {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 2px solid #009688;
+    background-color: #1A1A1A;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}

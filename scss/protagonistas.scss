@@ -1,0 +1,54 @@
+/* Contenido "protagonistas"*/
+
+.personajes {
+    width: 250px;
+    height: 250px;
+    border: 2px solid black;
+    transition: transform 1s;
+}
+
+.zoro {
+    color: #5CB85C;
+}
+
+.nami {
+    color: #FFA500;
+}
+
+.usopp {
+    color: #D2B48C;
+}
+
+.sanji {
+    @include colorPrincipal;
+}
+
+.luffyTitulo {
+    color: #FF0000;
+}
+
+.personajes {
+    margin-bottom: 10px;
+}
+
+.luffy {
+    margin-bottom: 20px;
+}
+
+.luffySolo {
+    width: 100%;
+    height: 80%;
+    border: 2px solid black;
+    transition: transform 1s;
+}
+
+
+.personajes:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.luffySolo:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
